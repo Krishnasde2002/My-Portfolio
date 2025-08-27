@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <!---<links rel="stylesheet" href="style.css"/>-->
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: #00071b;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #010b3a;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+nav ul li a{
+    color:white;
+    text-decoration: none;  
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px;
+    box-shadow: 0 0 100px #0066ff;
+}
+nav ul li a :hover{
+    color: #0066ff;
+}
+.blinking-text{
+    font-size: 20px;
+    font-weight: bold;
+    animation:blink 2s infinite;
+}
+@keyframes blink{
+    0% {color:white}
+    50%{color: #0066ff}
+    100%{color:rgb(255, 255, 255)}
+}
+.button{
+    padding: 8px 15px;
+    background: #ff009d;
+    box-shadow: 0 0 100px #0066ff;
+    color:white;
+    border-radius:5px;
+    text-decoration: none;
+}
+.button :hover{
+    color: blue;
+}
+.buttonn{
+    font-family: 'Times New Roman', Times, serif;
+    background: #0066ff;
+    padding: 8px 15px;
+    color:#010b3a;
+    width: 200px;
+    border-radius:5px;
+    border:solid #0066ff;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+.buttonnn{
+    font-family: 'Times New Roman', Times, serif;
+    background: #010b3a;
+    padding: 8px 15px;
+    color:#0066ff;
+    width: 200px;
+    border-radius:5px;
+    border: solid #0066ff;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left:30px;
+
+}
+#home{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height:90vh;
+    padding:50px;
+}
+
+.home-context h1{
+    font-size: 2.5rem;
+}
+.home-context span{
+    color:#00f0ff;
+}
+.home-img img{
+    height: 300px;
+    border-radius:50%;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.8);
+    animation: pulseglow 2s infinite alternate;
+}
+@keyframes pulseglow{
+    0%{
+    box-shadow:0 0 10px 2px rgba(0, 255, 255, 1);
+}
+    100%{
+        box-shadow: 0 0 40px 15px rgba(0, 255, 255, 1);
+    }
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+@media(max-width:425px){
+    .home-img img{
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+@keyframes pulseglow{
+    0%{
+    box-shadow:0 0 10px 2px rgb(230, 9, 163);
+}
+    100%{
+        box-shadow: 0 0 40px 15px rgb(238, 7, 7);
+    }
+}
+.home-context{
+    position: relative;
+    left: 70px;
+    display:grid;
+}
+.home-context h1 {
+    font-size: 1.5rem;
+}
+.buttonn{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: #0066ff;
+    padding: 8px 15px;
+    color:#010b3a;
+    width: 150px;
+    border-radius:5px;
+    border:solid #0066ff;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left:30px;
+}
+.buttonnn{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: #010b3a;
+    padding: 8px 15px;
+    color:#0066ff;
+    width: 150px;
+    border-radius:5px;
+    border: solid #0066ff;
+    text-decoration: none;
+    position: relative;
+    top: 40px;
+    left:30px;
+
+}
+
+}
+
+</style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2>Portfolio</h2>
+                <ul><li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li></ul>
+                    <a href="#" class="button">Download CV</a>
+            </nav>
+        </header>
+        <!--Home Section-->
+        <section id="Home">
+            <div class="home-context">
+            <h4>Hello, I'm<br></h4><h1><span>Krishna Kumar Yadav</span></H1>
+            <h3 class="blinking-text">Software Developer</h3>
+            <p>I Create modern responsive website and Web Applications</p>
+
+            <a href="#" class="buttonn">Hire Me</a>
+            <a href="#" class="buttonnn">Contact Me</a>
+
+            </div>
+            <div class="home-img">
+                <img src="">
+            </div>    
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
